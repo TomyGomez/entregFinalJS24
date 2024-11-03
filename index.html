@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro e Ingreso JavaScript</title>
+    <link href='./style.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="container">
+        <!-- Formulario de Ingreso -->
+        <div id="formularioIngreso">
+            <h3>Ingrese los Datos de Acceso</h3>
+            <form id="formIngreso">
+                <input type="text" id="usuarioIngreso" placeholder="Usuario" />
+                <br><br>
+                <input type="password" id="contraIngreso" placeholder="Contraseña" />
+                <br><br>
+                <button type="submit">Ingresar</button>
+            </form>
+            <button id="mostrarRegistro">¿No tienes una cuenta? Regístrate</button>
+        </div>
+
+        <!-- Formulario de Registro -->
+        <div id="formularioRegistro" style="display: none;">
+            <h3>Regístrate</h3>
+            <form id="formRegistro">
+                <input type="text" id="usuarioRegistro" placeholder="Nuevo Usuario" />
+                <br><br>
+                <input type="password" id="contraRegistro" placeholder="Nueva Contraseña" />
+                <br><br>
+                <input type="text" id="nombreRegistro" placeholder="Nombre Completo" />
+                <br><br>
+                <button type="submit">Registrarse</button>
+            </form>
+            <button id="mostrarIngreso">¿Ya tienes una cuenta? Inicia Sesión</button>
+        </div>
+
+        <div id="resultado"></div>
+        <div id="ingresoNotas" style="display: none;">
+            <h3>Ingrese las notas del alumno</h3>
+            <select id="alumno">
+                <option value="">Seleccionar Alumno</option>
+                <option value="Agustin">Agustin</option>
+                <option value="Tomas">Tomas</option>
+                <option value="Marcelo">Marcelo</option>
+            </select>
+            <br><br>
+            <div id="notasContainer"></div>
+            <button id="calcularPromedio" style="display: none;">Calcular Promedio</button>
+        </div>
+        <div id="promedioResultado"></div>
+        <canvas id="graficoPromedio" width="400" height="200"></canvas>
+        <div id="datosExternos"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
