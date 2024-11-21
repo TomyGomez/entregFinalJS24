@@ -40,6 +40,12 @@
         <div id="resultado"></div>
         <div id="ingresoNotas" style="display: none;">
             <h3>Ingrese las notas del alumno</h3>
+
+                <div id="agregarAlumno">
+                    <h4>Agregar Alumno</h4>
+                    <input type="text" id="nuevoAlumno" placeholder="Nombre del Alumno" />
+                    <button id="btnAgregarAlumno">Agregar Alumno</button>
+                </div>
             <select id="alumno">
                 <option value="">Seleccionar Alumno</option>
                 <option value="Agustin">Agustin</option>
@@ -53,6 +59,11 @@
         <div id="promedioResultado"></div>
         <canvas id="graficoPromedio" width="400" height="200"></canvas>
         <div id="datosExternos"></div>
+    </div>
+    <br>
+    <!-- boton para obtener datos de la api externa -->
+    <div id="apiDatos">
+        <button id="btnObtenerDatos">Obtener Datos</button>
     </div>
 
     <script src="./script.js"></script>
